@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FluentDataDemo.Model
+namespace FluentDataDemo.DAL
 {
     public class Class1
     {
@@ -14,9 +14,10 @@ namespace FluentDataDemo.Model
             return new DbContext().ConnectionStringName("FluentDataDemo", new SqlServerProvider());
         }
 
-        public void Temp()
+        public dynamic Temp()
         {
-            dynamic product = Context1().Sql(@"").QuerySingle<dynamic>();
+            dynamic product = Context1().Sql(@"select * from Demo ").QuerySingle<dynamic>();
+            return product;
         }
     }
 }

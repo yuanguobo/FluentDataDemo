@@ -67,14 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\FluentDataDemo.mdf" />
+    <Content Include="Data\FluentDataDemo_log.ldf">
+      <DependentUpon>FluentDataDemo.mdf</DependentUpon>
+    </Content>
+    <Content Include="Demo.aspx" />
+    <Content Include="Import\dll\FluentData.dll" />
     <Content Include="ReadMe.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Import\FluentData入门-百度文库.docx" />
+    <Content Include="Import\FluentDataDemo表结构.docx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -83,7 +97,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FluentDataDemo.DAL\FluentDataDemo.DAL.csproj">
+      <Project>{3a1c8a96-aa3b-4e59-9bbe-3ad1c935fb67}</Project>
+      <Name>FluentDataDemo.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

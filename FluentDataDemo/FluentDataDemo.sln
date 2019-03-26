@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentDataDemo.Web", "Fluen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentDataDemo.Model", "FluentDataDemo.Model\FluentDataDemo.Model.csproj", "{112E47A6-1812-4362-8795-B511C975213F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentDataDemo.DAL", "FluentDataDemo.DAL\FluentDataDemo.DAL.csproj", "{3A1C8A96-AA3B-4E59-9BBE-3AD1C935FB67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{112E47A6-1812-4362-8795-B511C975213F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{112E47A6-1812-4362-8795-B511C975213F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{112E47A6-1812-4362-8795-B511C975213F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A1C8A96-AA3B-4E59-9BBE-3AD1C935FB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1C8A96-AA3B-4E59-9BBE-3AD1C935FB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1C8A96-AA3B-4E59-9BBE-3AD1C935FB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1C8A96-AA3B-4E59-9BBE-3AD1C935FB67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
