@@ -5,18 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FluentDataDemo.Model
+namespace FluentDataDemo.DAL
 {
-    public class Class1
+    public class BO
     {
-        public IDbContext Context1()
+        public IDbContext Context()
         {
             return new DbContext().ConnectionStringName("FluentDataDemo", new SqlServerProvider());
-        }
-
-        public void Temp()
-        {
-            dynamic product = Context1().Sql(@"").QuerySingle<dynamic>();
         }
     }
 }

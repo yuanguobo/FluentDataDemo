@@ -72,6 +72,7 @@
       <DependentUpon>FluentDataDemo.mdf</DependentUpon>
     </Content>
     <Content Include="Demo.aspx" />
+    <Content Include="Import\data.txt" />
     <Content Include="Import\dll\FluentData.dll" />
     <Content Include="ReadMe.txt" />
     <Content Include="Web.config" />
@@ -101,6 +102,10 @@
     <ProjectReference Include="..\FluentDataDemo.DAL\FluentDataDemo.DAL.csproj">
       <Project>{3a1c8a96-aa3b-4e59-9bbe-3ad1c935fb67}</Project>
       <Name>FluentDataDemo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FluentDataDemo.Model\FluentDataDemo.Model.csproj">
+      <Project>{112e47a6-1812-4362-8795-b511c975213f}</Project>
+      <Name>FluentDataDemo.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
